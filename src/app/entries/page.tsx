@@ -30,8 +30,8 @@ export default function EntriesPage() {
         } else {
           setEntries(data); // Set entries if data is returned
         }
-      } catch (err) {
-        setError('Error fetching entries'); // Handle fetch error
+      } catch {
+        setError(`Error fetching entries`); // Handle fetch error
       } finally {
         setLoading(false); // Set loading to false after fetch completes (success or error)
       }
