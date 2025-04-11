@@ -8,7 +8,6 @@ export default function Home() {
   const [magnification, setMagnification] = useState('');
   const [actualSize, setActualSize] = useState<number | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [isSaved, setIsSaved] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
   const calculate = () => {
@@ -35,9 +34,6 @@ export default function Home() {
 
     const result = await res.text();
     setIsLoading(false); // Stop loading
-
-    // Display the popup with a success message
-    setIsSaved(result === 'Success');
   };
 
   return (
