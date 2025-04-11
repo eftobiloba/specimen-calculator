@@ -14,7 +14,7 @@ export default function Navbar() {
 
           {/* Links */}
           <div className="flex space-x-6">
-            <Link href="https://github.com/eftobiloba" className="text-white hover:text-gray-300 transition duration-200">Github</Link>
+            <Link href="https://github.com/eftobiloba/specimen-calculator" className="text-white hover:text-gray-300 transition duration-200">Github</Link>
             <Link href="/entries" className="text-white hover:text-gray-300 transition duration-200">Entries</Link>
           </div>
         </div>
