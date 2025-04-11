@@ -22,7 +22,7 @@ export default function Home() {
 
     setIsLoading(true); // Start loading
     setShowPopup(true);
-    const res = await fetch('/api/add-entry', {
+    await fetch('/api/add-entry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -31,8 +31,6 @@ export default function Home() {
         actualSize,
       }),
     });
-
-    const result = await res.text();
     setIsLoading(false); // Stop loading
   };
 
