@@ -94,12 +94,8 @@ export default function Home() {
               </div>
             ) : (
               <div className="text-center">
-                <h2 className="text-xl text-black font-semibold mb-4">
-                  {isSaved ? 'Saved Successfully!' : 'Something went wrong'}
-                </h2>
-                {isSaved && (
-                  <p className="mb-4 text-green-600">Your entry has been saved!</p>
-                )}
+                <h2 className="text-xl text-black font-semibold mb-4">Saved Successfully!</h2>
+                <p className="mb-4 text-green-600">Your entry has been saved!</p>
                 <button
                   onClick={() => setShowPopup(false)}
                   className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
